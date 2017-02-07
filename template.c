@@ -12,13 +12,15 @@ int main(int argc, char* argv[]) {
     return -1;
   }
 
-  numElement = argv[1];
-  searchElement = argv[argc];
+  numElement = atoi(argv[1]);
+  searchElement = atoi(argv[argc - 1]);
+
+  printf("%d\n",numElement);
 
   for(i = 0; i < numElement; i++){
-    element[i] = argv[i+1];
+    element[i] = atoi(argv[i+2]);
     printf("%d\t",element[i]);
   }
-
+printf("\n");
   return 0;
 }
