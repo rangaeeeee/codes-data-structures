@@ -21,6 +21,9 @@ class linked_list:
       
   def list_length(self):
     return self.length
+
+  def create_loop(self):
+    pass
     
   def reverse_list(self):
     if self.head == None:
