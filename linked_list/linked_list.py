@@ -8,6 +8,11 @@ class linked_list:
     self.head = None
     self.length = 0
     
+  def addFront(self, val):
+    temp = node(val)
+    temp.next = self.head
+    self.head = temp
+    
   def add_node(self, data):
     if self.head == None:
       self.head = node(data)
